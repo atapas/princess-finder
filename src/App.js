@@ -28,8 +28,8 @@ function App() {
           console.error(error);
           return;
         }
-        console.log({ results });
-        //results.sort((a, b) => b.label.localeCompare(a.label));
+        console.log(results[0]);
+        
       });
     }
   }, 500);
