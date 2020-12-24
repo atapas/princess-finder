@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useRef, useState } from "react";
+import "./App.css";
+import ml5 from "ml5";
+
+import useInterval from "./hooks/useInterval";
+
+let classifier;
 
 function App() {
+  const videoRef = useRef();
+  const [start, setStart] = useState(false);
+
+  useEffect(() => {
+    classifier = ml5.imageClassifier("./model/model.json", () => {
+      navigator.mediaDevices
+        .getUserMedia({ video: true, audio: false })
+        .then((stream) => {
+          videoRef.current.srcObject = stream;
+          videoRef.current.play();
+        });
+    });
+  }, []);
+
+  useInterval(() => {
+    if (classifier && start) {
+      classifier.classify(videoRef.current, (error, results) => {
+        if (error) {
+          console.error(error);
+          return;
+        }
+        console.log({ results });
+        //results.sort((a, b) => b.label.localeCompare(a.label));
+      });
+    }
+  }, 500);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <video
+        ref={videoRef}
+        style={{ transform: "scale(-1, 1)" }}
+        width="300"
+        height="150"
+      />
+      <button onClick={() => setStart(!start)}>
+        {start ? "Stop" : "Start"}
+      </button>
+    </>
   );
 }
 
