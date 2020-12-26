@@ -42,7 +42,7 @@ body {
 }
 
 .results {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 .results .selected {
   border: 2px solid gold;
@@ -56,19 +56,14 @@ body {
 }
 
 .results .princes {
-  margin: 0; 
-  padding:0;
   list-style-type: none;
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
 .results .princes li {
-  float: left;
   padding: 15px 0px 0px 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .results .princes .img {

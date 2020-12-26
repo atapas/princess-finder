@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="container">
       <Loader
-        type="Grid"
+        type="Ball-Triangle"
         color="#00BFFF"
         height={200}
         width={200}
