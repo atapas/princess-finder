@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Result = props => {
+const Princess = props => {
     const mostMatched = props.data[0];
     const allLabels = props.data.map(elem => elem.label);
     const sortedLabels = allLabels.sort((a, b) => a.localeCompare(b));
-    console.log({sortedLabels});
     return(
-        <div>
+        <>
             <ul className="princes">
                 {sortedLabels.map(label => (
                     <li key={label}>
@@ -18,8 +17,8 @@ const Result = props => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </>
     )
 }
 
-export default Result;
+export default Princess;
