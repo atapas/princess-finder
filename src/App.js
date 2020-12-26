@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./App.css";
 import ml5 from "ml5";
+import Loader from 'react-loader-spinner';
 
 import useInterval from "./hooks/useInterval";
 import Princess from './Princess';
 import Chart from './Chart';
+
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import "./App.css";
 
 let classifier;
 
@@ -12,7 +15,7 @@ function App() {
   const videoRef = useRef();
   const [start, setStart] = useState(false);
   const [result, setResult] = useState([]);
-  const [showButton, setShowButton] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     classifier = ml5.imageClassifier("./model/model.json", () => {
@@ -21,7 +24,7 @@ function App() {
         .then((stream) => {
           videoRef.current.srcObject = stream;
           videoRef.current.play();
-          setShowButton(true);
+          setLoaded(true);
         });
     });
   }, []);
@@ -38,13 +41,21 @@ function App() {
     }
   }, 500);
 
-  const stopClassification = () => {
+  const toggle = () => {
     setStart(!start);
     setResult([]);
   }
 
   return (
     <div className="container">
+      <Loader
+        type="Grid"
+        color="#00BFFF"
+        height={200}
+        width={200}
+        visible={!loaded}
+        style={{display:'flex', justifyContent:'center', marginTop:'30px' }}
+      />
       <div className="upper">
         <div className="capture">
           <video
@@ -53,20 +64,19 @@ function App() {
             width="300"
             height="150"
           />
-          { 
-            showButton && (<button onClick={() => stopClassification()}>
+          {loaded && (
+            <button onClick={() => toggle()}>
               {start ? "Stop" : "Start"}
-            </button>)
-          }
+            </button>
+          )}
         </div>
-        { result.length > 0 && (
+        {result.length > 0 && (
           <div>
             <Chart data={result[0]} />
-          </div>)
-        }
-
+          </div>
+        )}
       </div>
-      { result.length > 0 && (
+      {result.length > 0 && (
         <div className="results">
           <Princess data={result} />
         </div>

@@ -1,10 +1,16 @@
+
+body {
+  background-color: #021626;
+  color: #FFFFFF;
+}
+
 .container {
   margin: 5px;
 }
+
 .upper {
   display: flex;
   justify-content: center;
-  border: 1px solid #ebebeb;
 }
 
 .capture {
@@ -59,7 +65,7 @@
 
 .results .princes li {
   float: left;
-  padding-left: 15px;
+  padding: 15px 0px 0px 15px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

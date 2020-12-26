@@ -15,7 +15,6 @@ const Chart = (props) => {
         colors={["#FF5F6D", "#FFC371", "rgb(26 202 26)"]}
         arcWidth={0.3}
         percent={confidence}
-        textColor="#000000"
       />
     </div>
   );
