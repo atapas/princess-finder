@@ -3,12 +3,14 @@ import "./App.css";
 import ml5 from "ml5";
 
 import useInterval from "./hooks/useInterval";
+import Result from './Result';
 
 let classifier;
 
 function App() {
   const videoRef = useRef();
   const [start, setStart] = useState(false);
+  const [result, setResult] = useState([]);
 
   useEffect(() => {
     classifier = ml5.imageClassifier("./model/model.json", () => {
@@ -28,11 +30,15 @@ function App() {
           console.error(error);
           return;
         }
-        console.log(results[0]);
-        
+        setResult(results);
       });
     }
   }, 500);
+
+  const stopClassification = () => {
+    setStart(!start);
+    setResult([]);
+  }
 
   return (
     <>
@@ -42,9 +48,11 @@ function App() {
         width="300"
         height="150"
       />
-      <button onClick={() => setStart(!start)}>
+      <button onClick={() => stopClassification()}>
         {start ? "Stop" : "Start"}
       </button>
+
+      { result.length > 0 && (<Result data={result} />) }
     </>
   );
 }
