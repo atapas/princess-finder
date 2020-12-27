@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import ml5 from "ml5";
 import Loader from 'react-loader-spinner';
+import useInterval from '@use-it/interval';
 
-import useInterval from "./hooks/useInterval";
 import Princess from './Princess';
 import Chart from './Chart';
 
@@ -37,6 +37,7 @@ function App() {
           return;
         }
         setResult(results);
+        // console.log(results)
       });
     }
   }, 500);
@@ -49,7 +50,7 @@ function App() {
   return (
     <div className="container">
       <Loader
-        type="Ball-Triangle"
+        type="Watch"
         color="#00BFFF"
         height={200}
         width={200}
