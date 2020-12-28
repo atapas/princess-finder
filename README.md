@@ -17,6 +17,11 @@ Whereas, there is no way I look like a Disney Princess(not even a doll). Hence m
 
 # Want to Motivate?
 Thanks for your time to reading this. Feel free to clone/folrk/improve. Who doesn't want motivations? Give the project a star(⭐) if you liked the work.
+
+## Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
+
+[![Stargazers repo roster for @atapas/princess-finder](https://reporoster.com/stars/atapas/princess-finder)](https://github.com/atapas/princess-finder/stargazers)
+
 # Demo
 You can find a [Live Demo from here](http://princess-finder.netlify.app/)
 
