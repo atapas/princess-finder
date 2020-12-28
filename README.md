@@ -16,7 +16,7 @@ Whereas, there is no way I look like a Disney Princess(not even a doll). Hence m
 > ![no_dolls.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1609043109997/kMZcy7EGe.png)
 
 # Want to Motivate?
-Thanks for your time to reading this. Feel free to close/folrk/improve. Who doesn't want motivations? Give the project a star(⭐) if you liked the work.
+Thanks for your time to reading this. Feel free to clone/folrk/improve. Who doesn't want motivations? Give the project a star(⭐) if you liked the work.
 # Demo
 You can find a [Live Demo from here](http://princess-finder.netlify.app/)
 
