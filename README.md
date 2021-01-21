@@ -1,6 +1,6 @@
 # Princess Finder
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 I've borrowed all the Disney Princess dolls from my daughter to build a Machine Learning model such that, an application can recognize them with confidence using a webcam. I have given it a name too. The app is called, `Princess Finder`. 
 
@@ -64,6 +64,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://MichaelCurrin.github.io"><img src="https://avatars0.githubusercontent.com/u/18750745?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Currin</b></sub></a><br /><a href="https://github.com/atapas/princess-finder/issues?q=author%3AMichaelCurrin" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://tapasadhikary.com"><img src="https://avatars1.githubusercontent.com/u/3633137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/atapas/princess-finder/commits?author=atapas" title="Code">💻</a></td>
   </tr>
 </table>
 
