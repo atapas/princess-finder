@@ -1,10 +1,15 @@
 # Princess Finder
+
+[![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 I've borrowed all the Disney Princess dolls from my daughter to build a Machine Learning model such that, an application can recognize them with confidence using a webcam. I have given it a name too. The app is called, `Princess Finder`. 
 
 # Technologies Used
+
 The `Princess Finder` app is built using,
 - [The Teachable Machine](https://teachablemachine.withgoogle.com/): How about an easy and fast way to create machine learning `models` that you can directly use in your app or site? The Teachable Machine allows you to `train` a computer with images, sounds, and poses. We have created a model using the Disney princess so that, we can perform an `Image Classification` by using it in our app.
 - [ml5.js](https://learn.ml5js.org/#/): It is machine learning for the web using your web browser. It uses the web browser's built-in graphics processing unit (GPU) to perform fast calculations. We can use the API like, `imageClassifier(model)`, `classify`, etc. to perform the image classification.
@@ -74,3 +79,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## License
+
+Released under [MIT](/LICENSE) by [@atapas](https://github.com/atapas).
