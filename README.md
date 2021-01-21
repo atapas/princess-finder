@@ -8,7 +8,7 @@
 
 I've borrowed all the Disney Princess dolls from my daughter to build a Machine Learning model such that, an application can recognize them with confidence using a webcam. I have given it a name too. The app is called, `Princess Finder`. 
 
-# Technologies Used
+## Technologies Used
 
 The `Princess Finder` app is built using,
 - [The Teachable Machine](https://teachablemachine.withgoogle.com/): How about an easy and fast way to create machine learning `models` that you can directly use in your app or site? The Teachable Machine allows you to `train` a computer with images, sounds, and poses. We have created a model using the Disney princess so that, we can perform an `Image Classification` by using it in our app.
@@ -23,14 +23,16 @@ Whereas, there is no way I look like a Disney Princess(not even a doll). Hence m
 
 > ![no_dolls.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1609043109997/kMZcy7EGe.png)
 
-# Want to Motivate?
+## Want to Motivate?
+
 Thanks for your time to reading this. Feel free to clone/fork/improve. Who doesn't want motivations? Give the project a star(⭐) if you liked the work.
 
 ## Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
 
 [![Stargazers repo roster for @atapas/princess-finder](https://reporoster.com/stars/atapas/princess-finder)](https://github.com/atapas/princess-finder/stargazers)
 
-# Demo
+## Demo
+
 You can find a [Live Demo from here](http://princess-finder.netlify.app/)
 
 Build Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/a78bf701-a71f-4d07-a7ef-3f3ba21aefbb/deploy-status)](https://app.netlify.com/sites/princess-finder/deploys)
