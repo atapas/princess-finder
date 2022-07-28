@@ -29,7 +29,7 @@ Thanks for your time to reading this. Feel free to clone/fork/improve. Who doesn
 
 ## Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
 
-[![Stargazers repo roster for @atapas/princess-finder](https://reporoster.com/stars/atapas/princess-finder)](https://github.com/atapas/princess-finder/stargazers)
+[![Thanks to all stargazers](https://git-lister.onrender.com/api/stars/atapas/princess-finder?limit=15)](https://github.com/atapas/princess-finder/stargazers)
 
 ## Demo
 
